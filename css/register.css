@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-register {
+    width: 100vw;
+    height: 100vh;
+    background-color: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-register {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-register h1{
+    font-size: 3vh;
+    color: #77ffc0;
+}
+
+.left-register-image {
+    width: 30vw;
+}
+
+.right-register {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-register {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #2f2841;
+    padding: 30px 35px;
+    border-radius: 30px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-register h1 {
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-resolution: 10px 0px;
+}
+
+.textfield input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 16pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield label{
+    font-size: 14pt;
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.infos {
+    display: flex;
+    gap: 20px;
+}
+
+.textfield input::placeholder {
+    font-size: 12pt;
+    color: #f0ffff94;
+}
+
+.btn-register {
+    width: 100%;
+    height: 60px;
+    padding: 10px 0;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+.card-register p {
+    color: #00ff88;
+}
+
+@media only screen and (max-width: 950px) {
+    .card-register {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-register {
+        flex-direction: column;
+    }
+
+    .left-register h1 {
+        display: none;
+    }
+
+    .left-register {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-register {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-register-image {
+        width: 50vw;
+    }
+
+    .card-register {
+        margin-top: 10px;
+        width: 90%;
+    }
+
+    .textfield label {
+        font-size: 12pt;
+    }
+
+    .textfield input {
+        font-size: 11pt;
+    }
+
+    .textfield input::placeholder {
+        font-size: 10.2pt;
+    }
+
+    .textfield:nth-child(5) input::placeholder {
+        color: #00ff88;
+    }
+
+    .infos:nth-child(4) .textfield:nth-child(2) input::placeholder{
+        font-size: 9.5pt;
+    }
+}

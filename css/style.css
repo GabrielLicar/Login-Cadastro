@@ -52,7 +52,7 @@ body * {
     flex-direction: column;
     padding: 30px 35px;
     background: #2f2841;
-    border-radius: 20px;
+    border-radius: 30px;
     box-shadow: 0px 10px 40px #00000056;
 }
 
@@ -109,6 +109,15 @@ body * {
     box-shadow: 0px 10px 40px -12px #00ff8052;
 }
 
+.card-login p{
+    color: #00ff88;
+}
+
+.card-login a{
+    text-decoration: none;
+    color: #77ffc0;
+}
+
 @media only screen and (max-width: 950px) {
     .card-login{
         width: 85%
@@ -138,6 +147,18 @@ body * {
 
     .card-login {
         width: 90%;
+    }
+
+    .textfield label {
+        font-size: 12pt;
+    }
+
+    .textfield input {
+        font-size: 11pt;
+    }
+
+    .textfield input::placeholder {
+        font-size: 10.2pt;
     }
 }
 
