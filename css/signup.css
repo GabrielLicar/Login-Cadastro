@@ -9,7 +9,7 @@ body * {
     box-sizing: border-box;
 }
 
-.main-register {
+.main-signup {
     width: 100vw;
     height: 100vh;
     background-color: #201b2c;
@@ -18,7 +18,7 @@ body * {
     align-items: center;
 }
 
-.left-register {
+.left-signup{
     width: 50vw;
     height: 100vh;
     display: flex;
@@ -27,16 +27,16 @@ body * {
     flex-direction: column;
 }
 
-.left-register h1{
+.left-signup > h1{
     font-size: 3vh;
     color: #77ffc0;
 }
 
-.left-register-image {
+.left-signup-image {
     width: 30vw;
 }
 
-.right-register {
+.right-signup {
     width: 50vw;
     height: 100vh;
     display: flex;
@@ -44,68 +44,59 @@ body * {
     align-items: center;
 }
 
-.card-register {
+.card-signup {
     width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #2f2841;
     padding: 30px 35px;
+    background: #2f2841;
     border-radius: 30px;
     box-shadow: 0px 10px 40px #00000056;
 }
 
-.card-register h1 {
+.card-signup h1 {
     color: #00ff88;
     font-weight: 800;
+    text-transform: uppercase;
     margin: 0;
 }
-
+/* Usando o flex-direction, o align fica embaixo eixo x, e o justify em cima eixo y */
 .textfield {
-    margin-top: 10px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    max-resolution: 10px 0px;
+    margin: 10px 0px;
 }
 
 .textfield input {
     width: 100%;
-    height: 50px;
     border: none;
     border-radius: 10px;
     padding: 15px;
     background: #514869;
     color: #f0ffffde;
-    font-size: 16pt;
+    font-size: 14pt;
     box-shadow: 0px 10px 40px #00000056;
     outline: none;
     box-sizing: border-box;
 }
 
 .textfield label{
-    font-size: 14pt;
     color: #f0ffffde;
     margin-bottom: 10px;
 }
 
-.infos {
-    display: flex;
-    gap: 20px;
-}
-
 .textfield input::placeholder {
-    font-size: 12pt;
     color: #f0ffff94;
 }
 
-.btn-register {
+.btn-signup {
     width: 100%;
-    height: 60px;
-    padding: 10px 0;
+    padding: 16px 0px;
     margin: 25px;
     border: none;
     border-radius: 8px;
@@ -119,41 +110,47 @@ body * {
     box-shadow: 0px 10px 40px -12px #00ff8052;
 }
 
-.card-register p {
+.card-signup p{
     color: #00ff88;
 }
 
+.card-signup a{
+    text-decoration: none;
+    color: #77ffc0;
+}
+
+.btn-signup:hover {
+    background: #03d875;
+}
+
 @media only screen and (max-width: 950px) {
-    .card-register {
-        width: 85%;
+    .card-signup{
+        width: 85%
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .main-register {
+    .main-signup {
         flex-direction: column;
     }
-
-    .left-register h1 {
+    .left-signup h1 {
         display: none;
     }
 
-    .left-register {
+    .left-signup {
+        width: 100%;
+        height: auto;
+    }
+    .right-signup {
         width: 100%;
         height: auto;
     }
 
-    .right-register {
-        width: 100%;
-        height: auto;
-    }
-
-    .left-register-image {
+    .left-signup-image {
         width: 50vw;
     }
 
-    .card-register {
-        margin-top: 10px;
+    .card-signup {
         width: 90%;
     }
 
@@ -168,12 +165,5 @@ body * {
     .textfield input::placeholder {
         font-size: 10.2pt;
     }
-
-    .textfield:nth-child(5) input::placeholder {
-        color: #00ff88;
-    }
-
-    .infos:nth-child(4) .textfield:nth-child(2) input::placeholder{
-        font-size: 9.5pt;
-    }
 }
+

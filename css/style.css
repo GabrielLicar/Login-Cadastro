@@ -78,15 +78,10 @@ body * {
     padding: 15px;
     background: #514869;
     color: #f0ffffde;
-    font-size: 16pt;
+    font-size: 14pt;
     box-shadow: 0px 10px 40px #00000056;
     outline: none;
     box-sizing: border-box;
-}
-
-.textfield label{
-    color: #f0ffffde;
-    margin-bottom: 10px;
 }
 
 .textfield input::placeholder {
@@ -107,6 +102,10 @@ body * {
     background: #00ff88;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+.btn-login:hover {
+    background: #03d875;
 }
 
 .card-login p{
